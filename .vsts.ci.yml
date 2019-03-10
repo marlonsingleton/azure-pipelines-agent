@@ -1,7 +1,7 @@
 resources:
   containers:
   - container: dotnetcore_arm
-    image: mcr.microsoft.com/dotnet/core/runtime-deps:2.1
+    image: microsoft/dotnet-buildtools-prereqs:ubuntu-16.04-arm32v7-11ff40c-20190214212755
 jobs:
 
 ################################################################################
