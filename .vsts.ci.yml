@@ -1,3 +1,7 @@
+resources:
+  containers:
+  - container: dotnetcore_arm
+    image: mcr.microsoft.com/dotnet/core/runtime-deps:2.1
 jobs:
 
 ################################################################################
@@ -118,6 +122,7 @@ jobs:
   pool:
     name: buildDevs
     demands: 'Agent.OSArchitecture -equals ARM'
+    container: dotnetcore_arm
   steps:
 
   # Steps template for non-windows platform
