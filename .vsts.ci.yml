@@ -1,7 +1,7 @@
 resources:
   containers:
   - container: dotnetcore_arm
-    image: microsoft/dotnet-buildtools-prereqs:ubuntu-16.04-arm32v7-11ff40c-20190214212755
+    image: mcr.microsoft.com/dotnet/core/runtime-deps:2.1
 jobs:
 
 ################################################################################
@@ -124,7 +124,8 @@ jobs:
     demands: 'Agent.OSArchitecture -equals ARM'
   container: dotnetcore_arm
   steps:
-
+  - script: apt update & apt install -y curl
+  
   # Steps template for non-windows platform
   - template: .vsts.template.nonwindows.yml
 
