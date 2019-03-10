@@ -124,7 +124,6 @@ jobs:
     demands: 'Agent.OSArchitecture -equals ARM'
   container: dotnetcore_arm
   steps:
-  - script: sudo apt update & sudo apt install -y curl
   
   # Steps template for non-windows platform
   - template: .vsts.template.nonwindows.yml
