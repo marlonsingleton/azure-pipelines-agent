@@ -1,7 +1,7 @@
 resources:
   containers:
   - container: dotnetcore_arm
-    image: hhttllkkk/ting-vsts-agent-eng:dotnetcore_arm
+    image: huangtingluo/azure-pipelines-agent-eng:arm
 jobs:
 
 ################################################################################
