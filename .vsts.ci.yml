@@ -122,7 +122,7 @@ jobs:
   pool:
     name: buildDevs
     demands: 'Agent.OSArchitecture -equals ARM'
-    container: dotnetcore_arm
+  container: dotnetcore_arm
   steps:
 
   # Steps template for non-windows platform
