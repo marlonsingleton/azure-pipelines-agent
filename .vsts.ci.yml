@@ -1,7 +1,7 @@
 resources:
   containers:
   - container: dotnetcore_arm
-    image: mcr.microsoft.com/dotnet/core/runtime-deps:2.1
+    image: hhttllkkk/ting-vsts-agent-eng:dotnetcore_arm
 jobs:
 
 ################################################################################
