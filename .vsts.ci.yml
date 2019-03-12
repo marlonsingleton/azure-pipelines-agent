@@ -121,7 +121,9 @@ jobs:
   displayName: Linux Agent (ARM)
   pool:
     name: buildDevs
-    demands: 'Agent.OSArchitecture -equals ARM'
+    demands:
+    - docker
+    - 'Agent.OSArchitecture -equals ARM'
   container: dotnetcore_arm
   steps:
   
